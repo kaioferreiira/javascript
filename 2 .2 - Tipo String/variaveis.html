@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+	<html lang="pt-br">
+
+	<!-- Cabeçalho -->
+	<head>
+		<title>Aula de JavaScript</title>
+        <meta charset="UTF8">
+	</head>
+	<!-- Corpo do Documento -->
+	<body>
+        <h1>Tipagem Dinâmica</h1>
+		<script>
+			
+			//Comparando Strings
+			var  texto1 ='kaio ferreira '; 
+			var  texto2 ='kaio ferreira '; 
+			console.log(texto1 == texto2);
+			console.log(texto1 === texto2);
+
+			//Buscando índice de um elemento String 
+			var texto3 = 'Olá, seja bem-vindo a aula de Programação WEB I ';
+			//Qual é o índice começa a palavra vindo ?
+			console.log(texto3.indexOf('O'));
+				
+			//Qual é o índice começa a palavra a ?
+			console.log(texto3.indexOf('a'));
+
+			//substrings
+			//Para pegar um pedaço da string 
+			var s = 'Olá, seja bem-vindo a aula de Programação WEB I';
+			console.log(s.substring(2,6));
+			console.log(s.slice(2,6));
+
+			// colocando os valores de uma String em Maiusculo
+			console.log(s.toLowerCase());
+			console.log(s.toUpperCase());
+
+
+			//Concatenando Strings
+
+			var msg = 'Olá' + ' ' + 'Kaio' + ' ' + 'Ferreira.'
+			console.log(msg);
+
+			var msg2 = 'Olá'.concat(' ','Kaio',' ','Ferreira.');
+			console.log(msg2);
+
+
+			//Descobrir qual valor esta em determinada posição
+			var nome = 'Kaio Ferreira Costa';
+			console.log(nome.indexOf('r'))
+			console.log(nome.charAt(7) );
+
+
+
+
+			var n =  'lucas';
+			var n2 = 'lucasds';
+
+			console.log(n == n2);	
+		</script>
+	</body>
+</html>

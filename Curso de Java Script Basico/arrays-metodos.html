@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<hmtl lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title> Arrays TIPOS DE METODOS </title>
+</head>
+<body>
+	<h1>Arrays in JS TIPOS DE METODOS </h1>
+	<STRONG>concat()</STRONG>
+	<script>
+		var array1 = new Array("Red",10,20);
+		var array2 =  Array("blue",20,13,array1);
+		array1 = array1.concat(array2);
+		document.write("<p>concat(): "+ array1.length + "</p>");
+		console.log("concat(): ");
+		console.log(array1);
+	</script>
+	
+
+
+	<STRONG>JOIN</STRONG> 
+	<script>/*LISTAR UMA STRING, PEGA OS VALORES DO ARRAY  E LISTA SEUS VALORES*/
+		
+		array1 = array1.concat(array2);
+		var list = array1.join(" - ");
+		document.write("<p>join(): "+ list + "</p>");
+		console.log("join: ");
+		console.log(list);
+	</script>
+
+	<STRONG>Pop</STRONG> 
+	<script>/*remove o  ELEMENTOS NO FINAL DO ARRAY*/
+		
+		array3.pop(	);
+		var list = array3.join(" - ");
+		document.write("<p>pop: "+ array3 + "</p>");
+		console.log("pop(): ");
+		console.log(array3);
+	</script>
+
+	<STRONG>PUSH</STRONG> 
+	<script>/*ADICIONAR ELEMENTOS NO FINAL DO ARRAY*/
+		var array3 = Array("blue",20,15,array1);
+		array3.push("New Element");
+		var list = array3.join(" - ");
+		document.write("<p>push: "+ array3 + "</p>");
+		console.log("push(): ");
+		console.log(array3);
+	</script>
+
+	<STRONG>UnShift();</STRONG> 
+	<script>/*ele faz o contratio do push, ele adiciono o elemento no inicio do array*/
+		
+		var list = array1.join(" - ");
+		array1.unshift("New Element");
+		document.write("<p>Unshift: "+ array1 + "</p>");
+		console.log("Unshift(): ");
+		console.log(array1);
+	</script>
+
+	<STRONG>Shift</STRONG> 
+		<script>/*remove o  ELEMENTOS NO começõ DO ARRAY contrario do po*/
+			
+			array3.shift();
+			var list = array3.join(" - ");
+			document.write("<p>shift: "+ array3 + "</p>");
+			console.log("shift(): ");
+			console.log(array3);
+		</script>
+
+
+	<STRONG>Slice();</STRONG> 
+	<script>/*ele extrai uma parte de uma array e transforma em um novo array*/
+
+		var newArray = slice.array1(0,2);
+		var list = newArray.join(" - ");
+		document.write("<p>Slice: "+ newArray + "</p>");
+		console.log("Slice(): ");
+		console.log(newArray);
+	</script>
+
+
+	<STRONG>Splice();</STRONG> 
+	<script>/*escolhe uma determinada area e ele insere no meio*/
+
+		var array1 = new Array("Red",10,20);
+		array1 = splice(1,2,"abc");
+
+		var list = array1.join(" - ");
+		document.write("<p>Splice: "+ array1 + "</p>");
+		console.log("Splice(): ");
+		console.log(array1);
+	</script>
+
+
+	<STRONG>Reverse();</STRONG> 
+	<script>/*inverte o vetor*/
+
+		var array1 = new Array("A","B","C","D");
+		array1 = reverse();
+
+		var list = array1.join(" - ");
+		document.write("<p>reverse: "+ array1 + "</p>");
+		console.log("Reverse(): ");
+		console.log(array1);
+	</script>
+</body>
+
+</hmtl>

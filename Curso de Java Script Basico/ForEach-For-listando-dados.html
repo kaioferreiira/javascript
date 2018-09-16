@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<hmtl lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title> Arrays </title>
+</head>
+<body>
+	<h1>Arrays in JS ForEach </h1>
+	<h1>ForEach(callBack[, thisObject])</h1>
+
+	<script> // é um laço de repetição
+
+	var arr = ["a content  of a blog","news of a article","recipe for  a cake","programing tips"];
+	arr.forEach(function(value,key){
+		document.write("<p> Key= " + key + "value =" +value+ "</p>"); //para imprimir na tela	
+	});
+
+	</script>
+
+	<p>simple test: </p>
+	<script> 
+		for(var y=0; y<=10; y++){
+			document.write(y + "<br>");
+		}
+	</script>
+
+	<p>advanced test: </p>
+	<script> 
+		var arr = ["a content  of a blog","news of a article","recipe for  a cake","programing tips"];
+		for(var y=0; y<arr.length; y++){
+			document.write(arr[y]+  "<br>");			
+		}
+	</script>
+
+</body>
+
+</hmtl>

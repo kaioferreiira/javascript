@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<hmtl lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title> Arrays TIPOS DE METODOS </title>
+</head>
+<body>
+	<h1>Arrays in JS TIPOS DE METODOS </h1>
+
+	<STRONG>indexOf()</STRONG>
+	<script>
+	var array1 = ["orange","blue","red","blue","green"];
+	var retorno = array1.indexOf("blue");
+	document.write("<p> retorno: " + retorno + "value =" +array1[retorno] + "</p>"); //para imprimir na tela
+	console.log("indexOf");
+	console.log(retorno);
+	</script>
+
+	<STRONG>indexOf(searchElement[, fromIndex])</STRONG>
+	<script>
+	var array1 = ["orange","blue","red","blue","green"];
+	var retorno = array1.indexOf("blue",2); // busca a apartir de uma posição especifica do inicio ao fim
+	document.write("<p> retorno: " + retorno + "value =" +array1[retorno] + "</p>"); //para imprimir na tela
+	console.log("indexOf");
+	console.log(retorno);
+	</script>
+
+	<STRONG>lastIndexOf()</STRONG>
+	<script>
+	var array1 = ["orange","blue","red","blue","green"];
+	var retorno = array1.lastIndexOf("blue"); // busca a apartir de uma posição especifica do fim ao inicio
+	document.write("<p> retorno: " + retorno + "value =" +array1[retorno] + "</p>"); //para imprimir na tela
+	console.log("lastIndexOf");
+	console.log(retorno);
+	</script>
+
+
+	<STRONG>lastIndexOf(searchElement[, fromIndex])</STRONG>
+	<script>
+	var array1 = ["orange","blue","red","blue","green"];
+	var retorno = array1.lastIndexOf("blue",2); // busca a apartir de uma posição especifica do fim ao inicio
+	document.write("<p> retorno: " + retorno + "value =" +array1[retorno] + "</p>"); //para imprimir na tela
+	console.log("lastIndexOf");
+	console.log(retorno);
+	</script>
+
+	<STRONG>Search in practice</STRONG>
+	<br>
+	<input type="text" id="search" name="">
+	<button onclick="search();"> search</button>
+	<br>
+	<strong>Result: </strong>
+	<br>
+	<span id="result"></span>
+
+	<script>
+
+		function search(){	
+
+		var arr = ["a content  of a blog","news of a article","recipe for  a cake","programing tips"];
+		var search = document.getElementById("search").value;
+		var testKey = null;
+		var result = "";
+
+		for(var key in arr){
+			var auxArr = arr[key].split(" "); // essa função ela quebra meu texto em varia palavras, para eu conseguir pegar a parte que quero
+			for(var key2 in auxArr){
+				if(auxArr.indexOf(search) > -1){
+					if(testKey!= key){
+						testKey = key;
+						result += "<p>" + arr[key] + "</p>";
+					}
+				}
+			}
+		}
+		document.getElementById("result").innerHTML = result;
+	}
+	</script>
+
+</body>
+
+</hmtl>
